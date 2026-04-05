@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Web Design | Rayan Fiver Blog</title>
-  <meta name="description" content="Explore modern responsive design strategies and CSS techniques." />
+  <title>UI Design Principles | Rayan Fiver Blog</title>
+  <meta name="description" content="Learn essential UI design principles including hierarchy, contrast, and typography." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,110 +24,67 @@
       <a href="index.html#articles" class="back-link">← Back to articles</a>
 
       <header class="article-header">
-        <span class="badge">Web Design</span>
-        <h1>The Future of Responsive Web Design</h1>
-        <p class="article-meta">By Rayan Fiver • 15 Apr 2026 • 8 min read</p>
+        <span class="badge">Design Principles</span>
+        <h1>Essential UI Design Principles</h1>
+        <p class="article-meta">By Rayan Fiver • 18 Apr 2026 • 10 min read</p>
         <p class="article-intro">
-          Responsive web design has evolved significantly. Discover modern approaches including container queries, flexible grids, and adaptive images that create truly fluid experiences across all devices.
+          Good UI design is built on timeless principles. Understanding and applying these fundamentals will dramatically improve the quality of your designs and create more intuitive user experiences.
         </p>
       </header>
 
       <article class="article-content">
-        <h2>Evolution of Responsive Design</h2>
+        <h2>Visual Hierarchy</h2>
         <p>
-          When Ethan Marcotte introduced responsive web design in 2010, it revolutionized how we build for the web. Today, responsive design is no longer optional—it's essential. With over 60% of web traffic coming from mobile devices, designing for responsiveness from the start is non-negotiable.
+          Visual hierarchy guides users through your interface by establishing what's most important. It's created through strategic use of size, color, contrast, spacing, and typography.
         </p>
 
-        <h2>Mobile-First Approach</h2>
-        <p>
-          The mobile-first strategy means starting your design for small screens, then progressively enhancing for larger viewports. This approach ensures your site works everywhere and helps prioritize essential content.
-        </p>
-
-        <div class="code-block">
-          <div class="code-header">
-            <span>mobile-first-example.css</span>
-            <button class="copy-btn" type="button">Copy</button>
-          </div>
-          <pre><code><span class="token-comment\">/* Mobile first - base styles */</span>
-.container {
-  width: 100%;
-  padding: 0 16px;
-}
-
-<span class=\"token-comment\">/* Tablet and up */</span>
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-    margin: 0 auto;
-  }
-}
-
-<span class=\"token-comment\">/* Desktop */</span>
-@media (min-width: 1024px) {
-  .container {
-    width: 960px;
-  }
-}</code></pre>
-        </div>
-
-        <h2>Modern CSS Features</h2>
-        <p>
-          CSS Grid, Flexbox, and Container Queries have transformed how we create layouts. These tools make it easier than ever to build truly responsive interfaces without relying on complex media queries or JavaScript.
-        </p>
-
-        <h3>Key Modern Features</h3>
+        <h3>Implementing Hierarchy</h3>
         <ul>
-          <li><strong>CSS Grid:</strong> Two-dimensional layouts with automatic wrapping</li>
-          <li><strong>Flexbox:</strong> One-dimensional layouts with powerful alignment options</li>
-          <li><strong>Container Queries:</strong> Responsive components independent of viewport</li>
-          <li><strong>CSS Custom Properties:</strong> Dynamic theming and responsive values</li>
-          <li><strong>Aspect Ratio:</strong> Maintain proportions without padding hacks</li>
+          <li>Use size to emphasize importance</li>
+          <li>Apply contrasting colors to draw attention</li>
+          <li>Leverage whitespace to isolate elements</li>
+          <li>Use typography weight and size strategically</li>
         </ul>
 
-        <h2>Fluid Typography</h2>
+        <h2>Contrast and Readability</h2>
         <p>
-          Instead of changing font sizes at specific breakpoints, fluid typography scales smoothly from small to large viewports. This creates a more refined reading experience across all devices.
+          Contrast is crucial for both aesthetics and accessibility. Maintain at least 4.5:1 contrast ratio for normal text to ensure readability for everyone, including those with visual impairments.
         </p>
 
-        <div class="code-block">
-          <div class=\"code-header\">
-            <span>fluid-typography.css</span>
-            <button class=\"copy-btn\" type=\"button\">Copy</button>
-          </div>
-          <pre><code><span class=\"token-comment\">/* Fluid typography that scales smoothly */</span>
-h1 {
-  font-size: clamp(1.5rem, 4vw, 3rem);
-}
-
-p {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-}</code></pre>
-        </div>
-
-        <h2>Performance Considerations</h2>
+        <h2>Alignment and Spacing</h2>
         <p>
-          Responsive design must also consider performance. Optimize images, minimize CSS, and use modern image formats like WebP. Tools like Lighthouse help identify performance bottlenecks and opportunities for improvement.
+          Consistent alignment creates order and makes interfaces feel polished. Use a spacing scale to maintain visual rhythm throughout your designs.
         </p>
 
-        <h2>Accessibility in Responsive Design</h2>
+        <h2>Color Psychology</h2>
         <p>
-          Responsive design must include accessibility from the start. Ensure touch targets are at least 44x44 pixels, text has sufficient contrast, and keyboard navigation works flawlessly across all screen sizes.
+          Colors evoke emotions and influence behavior. Choose a palette that supports your design goals while maintaining accessibility standards.
+        </p>
+
+        <h2>Whitespace: The Unsung Hero</h2>
+        <p>
+          Whitespace reduces cognitive load and helps users focus. It's not wasted space—it's a powerful design tool. Use it strategically to create elegant, readable designs.
+        </p>
+
+        <h2>Consistency and Patterns</h2>
+        <p>
+          Consistency reduces the learning curve. Establish patterns and maintain them throughout your interface. Create design systems to ensure uniformity across all pages.
         </p>
 
         <h2>Key Takeaways</h2>
         <ul>
-          <li>Mobile-first design ensures better experiences for all users</li>
-          <li>Modern CSS makes responsive design more straightforward</li>
-          <li>Fluid typography improves readability across devices</li>
-          <li>Performance and accessibility are integral to responsive design</li>
-          <li>Test on real devices, not just browser emulation</li>
+          <li>Visual hierarchy guides user attention</li>
+          <li>Contrast is essential for accessibility</li>
+          <li>Consistency breeds user confidence</li>
+          <li>Whitespace is your design ally</li>
+          <li>Typography is a powerful design tool</li>
         </ul>
       </article>
 
       <section class="related-posts">
         <h3>Related Articles</h3>
         <div class="related-links">
-          <a href="post2.html">Essential UI Design Principles</a>
+          <a href="post1.html">Responsive Web Design</a>
           <a href="post3.html">Modern Web Development Tools</a>
         </div>
       </section>
